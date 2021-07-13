@@ -1,4 +1,4 @@
-name: Build ERC721 for Hotmoka
+name: Build
 
 on:
   push:
