@@ -9,19 +9,22 @@ public class ERC20PresetFixedSupply extends ERC20Burnable {
 
   /**
    * Mints a fixed amount of Tokens when constructed
+   *
    * @param name_ name of the token
    * @param symbol_ token's symbol
    * @param initialSupply Initial fixed supply
    * @param owner owner of the contract to mint initial supply to
    */
   @FromContract
-  public ERC20PresetFixedSupply(String name_, String symbol_, UnsignedBigInteger initialSupply, Contract owner) {
+  public ERC20PresetFixedSupply(
+      String name_, String symbol_, UnsignedBigInteger initialSupply, Contract owner) {
     super(name_, symbol_);
     this._mint(owner, initialSupply);
   }
 
   /**
    * Mints a fixed amount of Tokens when constructed
+   *
    * @param name_ name of the token
    * @param symbol_ token's symbol
    * @param initialSupply Initial fixed supply
@@ -29,7 +32,12 @@ public class ERC20PresetFixedSupply extends ERC20Burnable {
    * @param generateEvents Generate events or not
    */
   @FromContract
-  public ERC20PresetFixedSupply(String name_, String symbol_, UnsignedBigInteger initialSupply, Contract owner, boolean generateEvents) {
+  public ERC20PresetFixedSupply(
+      String name_,
+      String symbol_,
+      UnsignedBigInteger initialSupply,
+      Contract owner,
+      boolean generateEvents) {
     super(name_, symbol_, generateEvents);
     this._mint(owner, initialSupply);
   }
