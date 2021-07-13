@@ -28,7 +28,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build and report code coverage
-        run: mvn -B clean install
+        run: mvn install
 
       - name: Verify code formatting
         run: mvn spotless:check
