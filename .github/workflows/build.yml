@@ -1,4 +1,4 @@
-name: Build ERC721 for Hotmoka 
+name: Build ERC721 for Hotmoka
 
 on:
   push:
@@ -29,3 +29,6 @@ jobs:
 
       - name: Build and report code coverage
         run: mvn -B clean install
+
+      - name: Verify code formatting
+        run: mvn spotless:check
