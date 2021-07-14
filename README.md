@@ -7,7 +7,7 @@ To add ERC20 contracts and use them in your project first add the dependency in 
 ```xml
 <dependency>
   <groupId>io.nfteam.nftlab</groupId>
-  <artifactId>hotmoka-erc721</artifactId>
+  <artifactId>hotmoka-erc20</artifactId>
   <version>0.1</version>
 </dependency>
 ```
