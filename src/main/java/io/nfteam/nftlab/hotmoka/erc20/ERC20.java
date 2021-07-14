@@ -117,12 +117,12 @@ public abstract class ERC20 extends Contract implements IERC20 {
   /**
    * Atomically increases the allowance granted to {@param spender} by the caller.
    *
-   * This is an alternative to {@link ERC20#approve} that can be used as a mitigation for
+   * <p>This is an alternative to {@link ERC20#approve} that can be used as a mitigation for
    * problems described in {IERC20-approve}.
    *
-   * Emits an {@link IERC20.Approval} event indicating the updated allowance.
+   * <p>Emits an {@link IERC20.Approval} event indicating the updated allowance.
    *
-   * Requirements:
+   * <p>Requirements:
    *
    * @param spender cannot be the zero address.
    */
